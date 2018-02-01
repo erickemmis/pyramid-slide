@@ -5,33 +5,44 @@
   <meta charset="UTF-8">
   <title>Pyramid slide</title>
   
-  
-  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta.2/css/bootstrap.css'>
-
       <link rel="stylesheet" href="css/style.css">
 
   
 </head>
 
-<body>
-
-  <section class='container'>
-<select id='block_type' onchange="change_pyramid()">
-  <option value='#'>#</option>
-  <option value='@'>@</option>
-  <option value='x'>X</option>
-</select>
-
-<input id="p_height" type="range" value='1' min='1' max='23' oninput="change_pyramid()" />
-<span id="height_num">1</span>
-<div id="pyramid">
-  ##
-</div>
-</section>
+<body onload='change_pyramid()'>
+	<header>
+	<header>
+		<h1>Pyramid Slide</h1>
+	</header>
+	
+	<section class='container'>
+	
+		<div class='inputs'>
+		<label> Brick Symbol
+		<select id='block_type' onchange="change_pyramid()">
+		  <option value='#'>#</option>
+		  <option value='@'>@</option>
+		  <option value='X'>X</option>
+		  <option value='$'>$</option>
+		</select>
+		</label>
+		
+		<label> How high? 
+		<input id="p_height" type="range" value='8' min='1' max='20' oninput="change_pyramid()" />
+		</label>
+		<span id="height_num">1</span>
+		</div>
+		
+		<div id="pyramid">
+		</div>
+	</section>
   
   
 
-    <script  src="js/index.js"></script>
+  <script  src="js/main.js">
+  </script>
+  
 
 
 

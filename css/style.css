@@ -1,10 +1,57 @@
-#pyramid {
-    line-height: 0;
-    font-size: 30px;
-    
+/*
+	margin, padding, color, background-color, border, border-radius, font-size, font-weight */
+	
+body {
+  font-family: "Courier New", monospace;
+  text-align: center;
+  margin: 0;
 }
 
-body {
-    font-family: "Courier New", monospace;
-    text-align: center;
+#pyramid {
+  line-height: 0;
+  font-size: 30px;
+  color:#983F75; 
+  padding: 20px;   
+}
+
+header h1{
+	background: #983F75;
+	color: lightgrey;
+	font-weight: bold;
+	margin-top:0;
+	padding: 1em 0;
+}
+
+.container {
+	border: 2px solid #983F75;
+	background: #EAEAEA;
+	width: 800px;
+	margin: 0 auto;
+}
+
+.inputs {
+	background: #C1C1C1;
+	padding: 2em 0;
+}
+
+.inputs select, .inputs input {
+	background: #EAEAEA;
+	font-size: 1.2em;
+	font-weight:bold;
+	border: #929292;
+}
+
+.inputs label {
+	margin-left: 1.5em;
+}
+
+
+#height_num {
+	font-size: 1.2em;
+	font-weight: bold;
+}
+
+
+.container {
+	border-radius: 5px;
 }
